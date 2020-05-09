@@ -1,13 +1,13 @@
 import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
+//  import logo from './logo.svg';
+ import './App.css';
 
 class App extends React.Component {
   
   componentDidMount() {
-    fetch('// http://localhost:3000/threadds')
+    fetch('http://localhost:3000/threadds')
     
-    .then(res => console.log(res.json()))
+    .then(res => res.json())
     .then(jsonData => console.log(jsonData))
     
   }
@@ -17,7 +17,7 @@ class App extends React.Component {
      return (
     <div className="App">
       
-      The Sport Thread
+      <h1>The Sport Thread </h1>
     </div>
   );
   }
