@@ -1,15 +1,12 @@
 
-export function fetchThreadds(){
+export function fetchThreadds(action){
 
-      // componentDidMount() {
-  //   fetch('http://localhost:3000/threadds')
+    return action 
+        // fetch('http://localhost:3000/threadds')
     
-  //   .then(res => res.json())
-  //   .then(jsonData => console.log(jsonData))
+    // .then(res => res.json())
+    // .then(jsonData => console.log(jsonData))
     
-  // }
-
-
+    
 }
 
-dispatch()

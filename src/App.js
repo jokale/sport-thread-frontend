@@ -1,15 +1,19 @@
 import React from 'react';
 //  import logo from './logo.svg';
  import './App.css';
+ import {connect} from 'react-redux';
+ import {fetchThreadds} from './actions/fetchThreadds';
+
 
 class App extends React.Component {
   
   componentDidMount() {
-    fetch('http://localhost:3000/threadds')
+    // fetch('http://localhost:3000/threadds')
     
-    .then(res => res.json())
-    .then(jsonData => console.log(jsonData))
+    // .then(res => res.json())
+    // .then(jsonData => console.log(jsonData))
     
+    this.props.fetchThreadds({type: 'FETCH_THREADDS', payload: {username: 'Joanna'}})
   }
 
   render(){
@@ -24,4 +28,4 @@ class App extends React.Component {
 
 }
 
-export default App;
+export default connect(null,{fetchThreadds}) (App);
