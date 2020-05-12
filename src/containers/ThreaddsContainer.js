@@ -4,7 +4,7 @@ import Threaddform from '../components/Threaddform'
 import Threaddlist from '../components/Threaddlist'
 import Threaddshow from '../components/Threaddshow'
 import {connect} from 'react-redux';
-import {Route} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 
 class ThreaddsContainer extends React.Component {
     
@@ -16,12 +16,14 @@ class ThreaddsContainer extends React.Component {
         return(
 
             <div>
+                <Switch>
             <Route path='/thread/new' component={Threaddform}/>
             {/* <Threaddform/><br></br> */}
-             <Route path='threads/:id' render={(routerProps) => <Threaddshow {...routerProps} threadds={this.props.threadds}/>}/>
+             <Route path='/threads/:id' render={(routerProps) => <Threaddshow {...routerProps} threadds={this.props.threadds}/>}/>
 
             <Route exact path='/threads'render={()=> <Threaddlist threadds={this.props.threadds}/>} />
             {/* <Threaddlist threadds={this.props.threadds}/> */}
+            </Switch>
             </div>
         )
     }

@@ -3,20 +3,21 @@
 // functional because we arent doing anything with state 
 
 import React from 'react'
-
+// import {Redirect} from 'react-router-dom'
 const Threaddshow = (props) => {
 
      console.log(props)
 
-    //   let threadd = props.threadds[props.match.params.id -1]
+      let threadd = props.threadds[props.match.params.id -1]
 
-        // console.log(threadd)
+        console.log(threadd)
      return (
 
   <li>
+      {/* {threadd? null : <Redirect to='/threads'/>} */}
       {/* {props.threadd.thread_title} - By: {props.threadd.username} - {props.threadd.thread_body} - {props.threadd.date}  */}
-       {/* {threadd ? threadd.thread_title : null} -  {threadd ? threadd.date : null}-{threadd ? threadd.thread_body : null} */}
-        THREAD 
+      Title: {threadd ? threadd.thread_title : null}<br></br> By:{threadd ? threadd.username : null} <br></br>  Created: {threadd ? threadd.date : null} <br></br> Thread body: {threadd ? threadd.thread_body : null} 
+    
      </li>
 )
    
