@@ -4,6 +4,8 @@
 
 import React from 'react'
 // import {Redirect} from 'react-router-dom'
+import CommentsContainer from '../containers/CommentsContainer'
+
 const Threaddshow = (props) => {
 
      console.log(props)
@@ -13,12 +15,19 @@ const Threaddshow = (props) => {
         console.log(threadd)
      return (
 
+        <div>
+
   <li>
       {/* {threadd? null : <Redirect to='/threads'/>} */}
       {/* {props.threadd.thread_title} - By: {props.threadd.username} - {props.threadd.thread_body} - {props.threadd.date}  */}
-      Title: {threadd ? threadd.thread_title : null}<br></br> By:{threadd ? threadd.username : null} <br></br>  Created: {threadd ? threadd.date : null} <br></br> Thread body: {threadd ? threadd.thread_body : null} 
+      <h3>{threadd ? threadd.thread_title : null}<br></br> </h3>
+      <h4>By:{threadd ? threadd.username : null} <br></br></h4> 
+      <h6> Created: {threadd ? threadd.date : null} <br></br> </h6>
+        <h5> {threadd ? threadd.thread_body : null} </h5>
     
      </li>
+     <CommentsContainer/> 
+     </div>
 )
    
 
