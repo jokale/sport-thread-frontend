@@ -8,14 +8,14 @@ const Threaddshow = (props) => {
 
      console.log(props)
 
-      let threadd = props.threadds[props.match.params.id -1]
+    //   let threadd = props.threadds[props.match.params.id -1]
 
         // console.log(threadd)
      return (
 
   <li>
       {/* {props.threadd.thread_title} - By: {props.threadd.username} - {props.threadd.thread_body} - {props.threadd.date}  */}
-       {threadd ? threadd.thread_title : null} -  {threadd ? threadd.date : null}-{threadd ? threadd.thread_body : null}
+       {/* {threadd ? threadd.thread_title : null} -  {threadd ? threadd.date : null}-{threadd ? threadd.thread_body : null} */}
         THREAD 
      </li>
 )
