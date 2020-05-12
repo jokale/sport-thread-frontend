@@ -21,7 +21,13 @@ class ThreaddForm extends React.Component{
          handleTheSubmit = (event)=> {
             event.preventDefault()
             this.props.addThreadd(this.state)
+            this.setState({
+            username: '',
+            date: '',
+            thread_title: '',
+            thread_body: ''
 
+            })
 
          }
 
