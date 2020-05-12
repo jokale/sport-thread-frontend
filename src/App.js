@@ -16,6 +16,8 @@ class App extends React.Component {
   //   this.props.fetchThreadds({type: 'FETCH_THREADDS', payload: {username: 'Joanna'}})
   // }
 
+  // put routes and links from here
+
   render(){
 
     
