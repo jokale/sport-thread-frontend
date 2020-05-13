@@ -14,9 +14,8 @@ export const addComment =(comment, threaddId ) => {
         body: JSON.stringify(comment)
     })
     .then(res => res.json)
-    .then(threadd => 
-      dispatch({type: 'ADD_COMMENT', payload: threadd}))
-    //   history.push(`/threads/${threaddId}`)
+    .then(threadd => dispatch({type: 'ADD_COMMENT', payload: threadd}))
+   
        
     }
 

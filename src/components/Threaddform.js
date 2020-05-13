@@ -7,8 +7,16 @@ import { Redirect } from 'react-router-dom'
 
 
 
+//  const mystyle = {
+//         color: "white",
+//         backgroundColor: "DodgerBlue",
+//         padding: "10px",
+//         fontFamily: "Arial"
+//       };
 
 class ThreaddForm extends React.Component{
+
+   
 
     //local state    
     state = {
@@ -50,16 +58,18 @@ class ThreaddForm extends React.Component{
         return(
             <div>
                 <h5>New Thread Form</h5>
-                <form onSubmit={this.handleTheSubmit}>
-                <br></br><label >Name:</label><input type="text" placeholder="Username" value={this.state.username} name="username" onChange={this.handleTheChange}/><br></br>
-                <br></br><label >Date:</label><input type="date" placeholder="Date"value={this.state.date} name="date" onChange={this.handleTheChange}/><br></br>
-                <br></br><label >Thread title:</label><input type="text" placeholder="Thread title"value={this.state.thread_title} name="thread_title" onChange={this.handleTheChange}/><br></br>
-                <br></br> <label >Thread:</label><input type="text-area" placeholder="Thread" value={this.state.thread_body} name="thread_body" onChange={this.handleTheChange}/><br></br>
-                {/* <br></br><input type="submit"/><br></br> */}
+                 <form style={{backgroundColor: "lightblue"}} onSubmit={this.handleTheSubmit}>
+                <br></br><label >Name:</label><br/><input type="text" placeholder="Username" value={this.state.username} name="username" onChange={this.handleTheChange}/><br></br>
+                <br></br><label >Date:</label><br/><input type="date" placeholder="Date"value={this.state.date} name="date" onChange={this.handleTheChange}/><br></br>
+                <br></br><label >Thread title:</label><br/><input type="text" placeholder="Thread title"value={this.state.thread_title} name="thread_title" onChange={this.handleTheChange}/><br></br>
+                <br></br> <label >Thread:</label> <br/><textarea  placeholder="Thread" value={this.state.thread_body} name="thread_body" onChange={this.handleTheChange}/><br></br>
+                {/* <br></br><input type="submit"/><br></br> */} 
+                
                 <br></br> <button onClick={this.setRedirect} type="submit">Submit</button>
 
 
                 </form>
+          
             </div>
         )
     }

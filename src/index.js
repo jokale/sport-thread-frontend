@@ -11,6 +11,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Navbar from './components/Navbar'
 import Sportupdate from './components/Sportupdate'
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import * as serviceWorker from './serviceWorker';
 
 //The store

@@ -23,7 +23,7 @@ class Commentform extends React.Component{
         event.preventDefault()
         // let threadd = props.threadds[props.match.params.id -1]
        
-         this.props.addComment(this.state,this.addComment.thread.id)
+         this.props.addComment(this.state,this.props.threadd.id)
          
         this.setState({
         username: '',
@@ -36,12 +36,12 @@ class Commentform extends React.Component{
 
     render(){
         return(
-            <div>
-                <h5>New Comment Form:</h5>
-                <form onSubmit={this.handleTheSubmit}>
-                <br></br><label >Name:</label><input placeholder="Username" type="text"value={this.state.username} name="username" onChange={this.handleTheChange}/><br></br>
-                <br></br><label >Date:</label><input placeholder="Date"type="datetime-local"value={this.state.date} name="date" onChange={this.handleTheChange}/><br></br>
-                <br></br><label >Comment:</label><input placeholder="Comment"type="text"value={this.state.comment_description} name="comment_description"onChange={this.handleTheChange}/><br></br>
+            <div style={{backgroundColor: "lightblue"}}>
+               <br/> <h5>New Comment Form:</h5>
+                <form  onSubmit={this.handleTheSubmit}style={{color: "DodgerBlue"}}>
+                <br></br><label  >Name:</label><br/><input style={{color: "DodgerBlue"}} placeholder="Username" type="text"value={this.state.username} name="username" onChange={this.handleTheChange}/><br></br>
+                <br></br><label >Date:</label><br/><input placeholder="Date"type="datetime-local"value={this.state.date} name="date" onChange={this.handleTheChange}/><br></br>
+                <br></br><label >Comment:</label><br/><textarea placeholder="Comment"type="text"value={this.state.comment_description} name="comment_description"onChange={this.handleTheChange}/><br></br>
                 <br></br> <button type="submit">Submit</button>
 
                 </form>

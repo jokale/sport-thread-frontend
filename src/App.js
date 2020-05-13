@@ -5,18 +5,16 @@ import React from 'react';
 //  import {fetchThreadds} from './actions/fetchThreadds';
   import ThreaddsContainer from './containers/ThreaddsContainer';
 
-class App extends React.Component {
-  
-  // componentDidMount() {
-  //   // fetch('http://localhost:3000/threadds')
-    
-  //   // .then(res => res.json())
-  //   // .then(jsonData => console.log(jsonData))
-    
-  //   this.props.fetchThreadds({type: 'FETCH_THREADDS', payload: {username: 'Joanna'}})
-  // }
 
-  // put routes and links from here
+  const mystyle = {
+    color: "white",
+    backgroundColor: "DodgerBlue",
+    padding: "10px",
+    fontFamily: "Arial"
+  };
+
+class App extends React.Component {
+
 
   render(){
 
@@ -24,7 +22,7 @@ class App extends React.Component {
      return (
     <div className="App">
       
-      <h1>The Sport Thread </h1>
+    <br></br>  <h1 mystyle={mystyle}>The Sport Thread </h1>
       <ThreaddsContainer/>
     </div>
   );
