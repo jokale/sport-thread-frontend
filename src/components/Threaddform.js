@@ -2,6 +2,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addThreadd} from '../actions/addThreadd'
+import { Redirect } from 'react-router-dom'
 
 class ThreaddForm extends React.Component{
 
@@ -10,12 +11,14 @@ class ThreaddForm extends React.Component{
             username: '',
             date: '',
             thread_title: '',
-            thread_body: ''
+            thread_body: '',
+            redirect: false
         }
 
         handleTheChange = (event) =>{
             this.setState({
-               [event.target.name]: event.target.value 
+               [event.target.name]: event.target.value,
+               redirect: true
             })
         }
          handleTheSubmit = (event)=> {
@@ -26,10 +29,18 @@ class ThreaddForm extends React.Component{
             date: '',
             thread_title: '',
             thread_body: ''
+            
 
             })
 
          }
+
+         renderRedirect = () => {
+            if (this.state.redirect) {
+              return <Redirect to="/threads/:id" />
+            }
+          }
+        
 
     render(){
         return(
@@ -40,7 +51,8 @@ class ThreaddForm extends React.Component{
                 <br></br><label >Date:</label><input type="date" placeholder="Date"value={this.state.date} name="date" onChange={this.handleTheChange}/><br></br>
                 <br></br><label >Thread title:</label><input type="text" placeholder="Thread title"value={this.state.thread_title} name="thread_title" onChange={this.handleTheChange}/><br></br>
                 <br></br> <label >Thread:</label><input type="text-area" placeholder="Thread" value={this.state.thread_body} name="thread_body" onChange={this.handleTheChange}/><br></br>
-                <br></br><input type="submit"/><br></br>
+                {/* <br></br><input type="submit"/><br></br> */}
+                <br></br> <button onClick={this.setRedirect} type="submit">Submit</button>
 
 
                 </form>

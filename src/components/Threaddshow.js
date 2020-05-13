@@ -17,7 +17,7 @@ const Threaddshow = (props) => {
 
         <div>
 
-  <li>
+  <div>
       {/* {threadd? null : <Redirect to='/threads'/>} */}
       {/* {props.threadd.thread_title} - By: {props.threadd.username} - {props.threadd.thread_body} - {props.threadd.date}  */}
       <h3>{threadd ? threadd.thread_title : null}<br></br> </h3>
@@ -25,7 +25,7 @@ const Threaddshow = (props) => {
       <h6> Created: {threadd ? threadd.date : null} <br></br> </h6>
         <h5> {threadd ? threadd.thread_body : null} </h5>
     
-     </li>
+     </div>
      <CommentsContainer threadd={threadd}/> 
      </div>
 )
