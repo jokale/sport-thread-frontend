@@ -6,7 +6,7 @@ class CommentsContainer extends React.Component {
     render(){
         return(
             <div>
-                <Commentlist/>
+                <Commentlist comments={this.props.threadd && this.props.threadd.comments}/>
                 <Commentform/>
             </div>
         )

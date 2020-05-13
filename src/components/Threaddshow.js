@@ -26,7 +26,7 @@ const Threaddshow = (props) => {
         <h5> {threadd ? threadd.thread_body : null} </h5>
     
      </li>
-     <CommentsContainer/> 
+     <CommentsContainer threadd={threadd}/> 
      </div>
 )
    
