@@ -9,6 +9,7 @@ const Commentlist = (props) => {
               <h6>Created: {comment.date}</h6> 
               <h4>Comment {comment.id}:</h4><h5>  {comment.comment_description} </h5>
 
+
               </div>  
             )}
         </div>

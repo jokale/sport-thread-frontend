@@ -4,6 +4,10 @@ import {connect} from 'react-redux'
 import {addThreadd} from '../actions/addThreadd'
 import { Redirect } from 'react-router-dom'
 
+
+
+
+
 class ThreaddForm extends React.Component{
 
     //local state    

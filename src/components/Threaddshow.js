@@ -26,8 +26,13 @@ const Threaddshow = (props) => {
         <h5> {threadd ? threadd.thread_body : null} </h5>
     
      </div>
+     
      <CommentsContainer threadd={threadd}/> 
+     <h5>Want to create a new thread?<a href="http://localhost:3001/thread/new">New Thread</a></h5>
+   
      </div>
+
+     
 )
    
 
