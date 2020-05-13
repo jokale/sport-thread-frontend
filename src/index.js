@@ -6,7 +6,11 @@ import {createStore, applyMiddleware, compose} from 'redux';
 import thunk from 'redux-thunk';
 import {Provider} from 'react-redux'
 import threaddReducer from './reducers/threaddReducer'
-import {BrowserRouter as Router}  from 'react-router-dom'
+import {BrowserRouter as Router, Route}  from 'react-router-dom'
+import Home from './components/Home'
+import About from './components/About'
+import Navbar from './components/Navbar'
+import Sportupdate from './components/Sportupdate'
 // import * as serviceWorker from './serviceWorker';
 
 //The store
@@ -16,10 +20,21 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 let store = createStore(threaddReducer, composeEnhancers(applyMiddleware(thunk)))
 
+
+
 ReactDOM.render(
  <Provider store={store}> 
- <Router>
-    <App />
+ <Router> 
+   
+   <div>
+   <Navbar /> 
+   <App />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/updates" component={Sportupdate} />
+
+   </div> 
+   
   </Router>
   </Provider>
   ,
