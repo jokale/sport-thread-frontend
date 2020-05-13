@@ -12,7 +12,7 @@ const Threaddlist = (props) => {
         <div> 
             {props.threadds.map(threadd => 
             
-            <div key={threadd.id}><Link to={`/threads/${threadd.id}`}>{threadd.thread_title}</Link></div>)}
+            <div key={threadd.id}><Link to={`/threads/${threadd.id}`}>{threadd.thread_title}<br></br></Link></div>)}
 
             {/* //<li key={threadd.id}>Title: <br></br> {threadd.thread_title}<br></br> Thread creator: <br></br>{threadd.username} <br></br>Thread body: <br></br>{threadd.thread_body} <br></br> Date created: <br></br>{threadd.date }<br></br></li>)} */}
         </div>
