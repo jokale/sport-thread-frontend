@@ -7,7 +7,7 @@ import React from 'react';
 
 
   const mystyle = {
-    color: "white",
+    color: "pink",
     backgroundColor: "DodgerBlue",
     padding: "10px",
     fontFamily: "Arial"

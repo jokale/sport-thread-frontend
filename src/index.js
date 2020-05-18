@@ -28,7 +28,7 @@ ReactDOM.render(
  <Router> 
    
    <div>
-   <Navbar /> 
+   <center><Navbar /></center>
    <App />
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
@@ -41,6 +41,8 @@ ReactDOM.render(
   ,
   document.getElementById('root')
 );
+
+// move routes to apps
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
