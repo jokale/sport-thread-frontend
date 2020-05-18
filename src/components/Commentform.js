@@ -57,5 +57,7 @@ class Commentform extends React.Component{
     }
 }
 
+
+
 export default connect(null, {addComment})(Commentform);
 

@@ -4,10 +4,10 @@
 
 export const addComment =(comment, threaddId) => {
  console.log('the fetch')
- //   fetch(`http://localhost:3000/threadds/1/comments` ,{ This seems to work but ofc I do not want this for soley one thread 
+ //  http://localhost:3000/threadds/${threaddId}/comments fetch(`` ,{ This seems to work but ofc I do not want this for soley one thread 
 
     return(dispatch) => {
-    fetch(`http://localhost:3000/threadds/${threaddId}/comments` ,{
+    fetch(`http://localhost:3000/threadds/1/comments` ,{
          method: 'POST',
         headers: {
             'Content-type': 'application/json',

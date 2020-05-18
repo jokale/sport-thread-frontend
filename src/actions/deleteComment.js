@@ -1,4 +1,4 @@
-export const deleteComment = (threaddId,commentId) => {
+export const deleteComment = (commentId,threaddId) => {
 
 
     return (dispatch)=>{
@@ -6,6 +6,6 @@ export const deleteComment = (threaddId,commentId) => {
             method: 'DELETE'
         })
         .then(res => res.json())
-    }
-
+        .then(threadd => dispatch({type: 'DELETE_COMMENT', payload: threadd}))
+     }
 }

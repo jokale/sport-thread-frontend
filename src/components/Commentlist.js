@@ -1,13 +1,16 @@
 import React from 'react'
-
+import {connect} from 'react-redux'
+import {deleteComment} from '../actions/deleteComment'
 const Commentlist = (props) => {
 
 
-    const handleDelete = () => {
-       return(
-           <div> 
-           </div>
-       )
+    const handleDelete = (comment) => {
+      props.deleteComment(comment.id, comment.threadd_id)
+      // debugger
+      //  return(
+      //      <div> 
+      //      </div>
+       
     
     }
     return(
@@ -17,7 +20,7 @@ const Commentlist = (props) => {
               <h5>User: </h5> <h4>{comment.username}</h4>
               <h6>Created: {comment.date}</h6> 
               <h4>Comment:</h4><h5>  {comment.comment_description} </h5>
-                <button onClick={handleDelete}>Delete</button>
+                <button onClick={()=> handleDelete(comment)}>Delete</button>
 
               </div>  
             )}
@@ -27,6 +30,6 @@ const Commentlist = (props) => {
 
 
 
-export default Commentlist
+export default connect(null, {deleteComment})(Commentlist)
 
 
