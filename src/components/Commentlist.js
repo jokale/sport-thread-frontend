@@ -6,11 +6,7 @@ const Commentlist = (props) => {
 
     const handleDelete = (comment) => {
       props.deleteComment(comment.id, comment.threadd_id)
-      // debugger
-      //  return(
-      //      <div> 
-      //      </div>
-       
+   
     
     }
     return(
