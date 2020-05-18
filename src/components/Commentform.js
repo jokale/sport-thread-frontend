@@ -21,7 +21,6 @@ class Commentform extends React.Component{
 
     handleTheSubmit = (event)=> {
         event.preventDefault()
-        console.log('hello this props is about to begin')
         let comment = {
             username: this.state.username,
             date: this.state.date,
@@ -30,14 +29,13 @@ class Commentform extends React.Component{
     
         }
         this.props.addComment(comment)
-        // this.props.addComment(this.state,this.state.id)
-        //  debugger
+       
         this.setState({
         username: '',
         date: '',
         comment_description: ''
     }) 
-    // debugger;
+   
 
         }
 
