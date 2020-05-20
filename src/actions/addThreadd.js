@@ -10,7 +10,7 @@ export const addThreadd =(data ) => {
         method: 'POST',
         body: JSON.stringify(data)
     })
-    .then(res => res.json)
+    .then(res => res.json())
     .then(newThreadd => dispatch({type: 'ADD_THREADD', payload: newThreadd}))
        
     }

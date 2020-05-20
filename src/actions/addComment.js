@@ -2,17 +2,17 @@
 // import {connect} from 'react-redux';
 
 
-export const addComment =(comment, threaddId) => {
+export const addComment =( threaddId, comment ) => {
  console.log('the fetch')
- //  http://localhost:3000/threadds/${threaddId}/comments fetch(`` ,{ This seems to work but ofc I do not want this for soley one thread 
+ //   fetch(`http://localhost:3000/threadds/5/comments` ,{ This seems to work but ofc I do not want this for soley one thread 
 
     return(dispatch) => {
-    fetch(`http://localhost:3000/threadds/1/comments` ,{
-         method: 'POST',
+    fetch(`http://localhost:3000/threadds/${threaddId}/comments` ,{
+        
         headers: {
             'Content-type': 'application/json',
         },
-       
+        method: 'POST',
         body: JSON.stringify(comment)
     })
     .then(res => res.json())

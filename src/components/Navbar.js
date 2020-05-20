@@ -6,8 +6,10 @@ const link = {
   padding: '12px',
   margin: '0 6px 6px',
   background: 'DodgerBlue',
-  textDecoration: 'none',
-  color: 'white',
+  textDecoration: 'underline overline',
+  textDecorationColor: 'white',
+  color: 'pink',
+ 
 }
 
 class Navbar extends React.Component {

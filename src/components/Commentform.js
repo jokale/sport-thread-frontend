@@ -21,6 +21,7 @@ class Commentform extends React.Component{
 
     handleTheSubmit = (event)=> {
         event.preventDefault()
+        debugger
         let comment = {
             username: this.state.username,
             date: this.state.date,
