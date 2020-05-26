@@ -1,8 +1,8 @@
 // All of the accounts will live here
 // This is a functional component in an arrow function style 
 import React from 'react'
-import {Route, Link} from 'react-router-dom'
-import Threaddshow from './Threaddshow'
+import {Link} from 'react-router-dom'
+// import Threaddshow from './Threaddshow'
 
 
 
