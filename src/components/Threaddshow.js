@@ -13,6 +13,7 @@ const Threaddshow = (props) => {
       let threadd = props.threadds[props.match.params.id -1]
 
         console.log(threadd)
+        
      return (
 
         <div>

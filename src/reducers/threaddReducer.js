@@ -1,6 +1,6 @@
 
 export default function threaddReducer (state = {threadds:[]}, action) {
-
+    debugger;
     switch(action.type) {
     case 'FETCH_THREADDS':
        return {threadds: action.payload}

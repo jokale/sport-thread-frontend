@@ -1,14 +1,15 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {addComment} from '../actions/addComment'
-import {Threaddshow} from './Threaddshow'
+
 class Commentform extends React.Component{
 
 
     state = {
         username:'',
         date: '',
-        comment_description: ''
+        comment_description: '',
+        threadd_id: ''
 
     }
 
@@ -21,14 +22,17 @@ class Commentform extends React.Component{
 
     handleTheSubmit = (event)=> {
         event.preventDefault()
-        debugger
+        
         let comment = {
             username: this.state.username,
             date: this.state.date,
             comment_description: this.state.comment_description,
-            threadd_id:  this.props.threadd_id
+            threadd_id:  this.props.threadd.id 
     
         }
+
+        // console.log(comment)
+        // debugger
         this.props.addComment(comment)
        
         this.setState({
