@@ -5,10 +5,10 @@ const link = {
   width: '100px',
   padding: '12px',
   margin: '0 6px 6px',
-  background: 'DodgerBlue',
+  background: '#D7E1F6',
   textDecoration: 'underline overline',
   textDecorationColor: 'white',
-  color: 'pink',
+  color: 'black',
  
 }
 
@@ -21,7 +21,7 @@ class Navbar extends React.Component {
           exact
           style={link}
           activeStyle={{
-            background: 'darkblue'
+            background: '#375595'
           }}
         >Home</NavLink>
         <NavLink
@@ -29,7 +29,7 @@ class Navbar extends React.Component {
           exact
           style={link}
           activeStyle={{
-            background: 'darkblue'
+            background: '#375595'
           }}
         >About</NavLink>
              <NavLink
@@ -37,7 +37,7 @@ class Navbar extends React.Component {
           exact
           style={link}
           activeStyle={{
-            background: 'darkblue'
+            background: '#375595'
           }}
         >Threads</NavLink>
 
@@ -46,7 +46,7 @@ class Navbar extends React.Component {
           exact
           style={link}
           activeStyle={{
-            background: 'darkblue'
+            background: '#375595'
           }}
         >Create new thread</NavLink>
      
@@ -55,10 +55,9 @@ class Navbar extends React.Component {
           exact
           style={link}
           activeStyle={{
-            background: 'darkblue'
+            background: '#375595'
           }}
         >Live Sport Updates</NavLink>
-     
       </div>
     )
   }

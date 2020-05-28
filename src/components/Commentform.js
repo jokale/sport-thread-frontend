@@ -46,7 +46,7 @@ class Commentform extends React.Component{
 
     render(){
         return(
-            <div style={{backgroundColor: "lightblue"}}>
+            <div style={{backgroundColor: '#A7BAE3'}}>
                <br/> <h5>New Comment Form:</h5>
                 <form  onSubmit={this.handleTheSubmit}style={{color: "DodgerBlue"}}>
                 <br></br><label  >Name:</label><br/><input style={{color: "DodgerBlue"}} placeholder="Username" type="text"value={this.state.username} name="username" onChange={this.handleTheChange}/><br></br>

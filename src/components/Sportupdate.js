@@ -1,5 +1,6 @@
 import React from 'react';
- 
+
+
 class Sportupdate extends React.Component {
   render() {
     return (
@@ -10,6 +11,8 @@ class Sportupdate extends React.Component {
  <br></br><a href="https://www.skysports.com/live-blog/20876/11981775/coronavirus-in-sport-latest-updates-on-pandemics-impact-around-the-world" target="_blank" rel="noopener noreferrer"> Sky Sports Live</a>
 
 
+ <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+     <center><h6 style={{color: "#ff6699"}} >A Joanna E. Kalema Application</h6></center>
 </center>
 </div>
     )
