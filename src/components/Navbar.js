@@ -58,6 +58,14 @@ class Navbar extends React.Component {
             background: '#375595'
           }}
         >Live Sport Updates</NavLink>
+         <NavLink
+          to="/help"
+          exact
+          style={link}
+          activeStyle={{
+            background: '#375595'
+          }}
+        >Help</NavLink>
       </div>
     )
   }

@@ -3,6 +3,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {addThreadd} from '../actions/addThreadd'
 import Form from 'react-bootstrap/Form'
+import Alert from 'react-bootstrap/Alert'
 // import Threaddlist from './Threaddlist'
 // import {Route, Link} from 'react-router-dom'
 
@@ -70,6 +71,9 @@ class ThreaddForm extends React.Component{
                 </Form.Text>
                 <br></br> <button type="submit">Submit</button>
                               
+               
+
+               
                 </Form>
                   
 

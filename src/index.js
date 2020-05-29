@@ -11,6 +11,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Navbar from './components/Navbar'
 import Sportupdate from './components/Sportupdate'
+import Help from './components/Help'
 import 'bootstrap/dist/css/bootstrap.min.css';
 // import * as serviceWorker from './serviceWorker';
 
@@ -33,6 +34,8 @@ ReactDOM.render(
       <Route exact path="/" component={Home} />
       <Route exact path="/about" component={About} />
       <Route exact path="/updates" component={Sportupdate} />
+      <Route exact path="/help" component={Help} />
+
 
    </div> 
    
