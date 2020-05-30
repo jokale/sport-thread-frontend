@@ -26,6 +26,7 @@ let store = createStore(threaddReducer, composeEnhancers(applyMiddleware(thunk))
 
 ReactDOM.render(
  <Provider store={store}> 
+ 
  <Router> 
    
    <div>
@@ -35,6 +36,8 @@ ReactDOM.render(
       <Route exact path="/about" component={About} />
       <Route exact path="/updates" component={Sportupdate} />
       <Route exact path="/help" component={Help} />
+    
+  
 
 
    </div> 

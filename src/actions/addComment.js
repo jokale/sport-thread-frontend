@@ -23,7 +23,7 @@ export const addComment =(comment, threaddId) => {
        
 }
 
-    //we return dispatch so we have access to the action we are returnung we can do this because of thunk (we can return arguements due to thunk)
+    //we return dispatch so we have access to the action we are returnung we can do this because of thunk (we can return functions due to thunk)
 
 }
 

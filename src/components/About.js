@@ -8,7 +8,7 @@ class About extends React.Component {
     <center> <iframe title="This is a unique title" src="https://giphy.com/embed/UO5elnTqo4vSg" width="480" height="439" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/shaq-shimmy-UO5elnTqo4vSg">via GIPHY</a></p></center>
 
      <center><h4 style={{color: "white"}} > The Sport Thread is a  place where you can strike up different conversations about <br></br> different sport related topics, news and more through threads!
-     feel free to explore add a <a href="http://localhost:3001/thread/new">New Thread </a>or  <a href="http://localhost:3001/thread/updates">Live Sport Updates</a>
+     feel free to explore add a <a href="http://localhost:3001/thread/new">New Thread </a>or check out  <a href="http://localhost:3001/thread/updates">Live Sport Updates</a>
      </h4></center>
  
    <br></br>

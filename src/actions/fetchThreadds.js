@@ -15,3 +15,5 @@ export function fetchThreadds() {
     
 }
 
+// action being sent to reducer which will match the type with case statement and its type 
+

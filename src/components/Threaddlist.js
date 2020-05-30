@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
 // import Threaddshow from './Threaddshow'
 
-
+//Presentional component which is focusing on the look of how created threads will look 
 
 const Threaddlist = (props) => {
 

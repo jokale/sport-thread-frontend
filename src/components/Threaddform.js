@@ -3,25 +3,19 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {addThreadd} from '../actions/addThreadd'
 import Form from 'react-bootstrap/Form'
-import Alert from 'react-bootstrap/Alert'
+
 // import Threaddlist from './Threaddlist'
 // import {Route, Link} from 'react-router-dom'
 
 
 
 
-//  const mystyle = {
-//         color: "white",
-//         backgroundColor: "DodgerBlue",
-//         padding: "10px",
-//         fontFamily: "Arial"
-//       };
 
 class ThreaddForm extends React.Component{
 
    
 
-    //local state    
+    //local state that belongs to the component    
     state = {
             username: '',
             date: '',
@@ -30,6 +24,7 @@ class ThreaddForm extends React.Component{
         }
 
         handleTheChange = (event) =>{
+            // alert('Your Thread was submitted!');
             this.setState({
                [event.target.name]: event.target.value,
                redirect: true
@@ -38,7 +33,6 @@ class ThreaddForm extends React.Component{
          handleTheSubmit = (event)=> {
             event.preventDefault()
             this.props.addThreadd(this.state,this.props.history)
-            // .then(newThreadd => newThreadd.this.props.history.push)
             this.setState({
             username: '',
             date: '',
@@ -47,11 +41,11 @@ class ThreaddForm extends React.Component{
             
 
             })
-
-            // this.props.Threaddlist.push(`/threads/${threadd.id}`)
+           
+        
          }
 
-        
+     
 
     render(){
         return(
@@ -70,6 +64,7 @@ class ThreaddForm extends React.Component{
                 We'll never share your data with anyone else.
                 </Form.Text>
                 <br></br> <button type="submit">Submit</button>
+
                               
                
 
@@ -79,13 +74,11 @@ class ThreaddForm extends React.Component{
 
 
 
-
-
+   
             
                 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-     <center><h6 style={{color: "#ff6699"}} >A Joanna E. Kalema Application</h6></center>
+     <center><h6  >A Joanna E. Kalema Application</h6></center>
             </div> 
-            //  console.log('hello')
         )
     }
 }

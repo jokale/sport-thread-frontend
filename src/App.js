@@ -6,12 +6,7 @@ import React from 'react';
   import ThreaddsContainer from './containers/ThreaddsContainer';
 
 
-  const mystyle = {
-    color: "pink",
-    backgroundColor: "DodgerBlue",
-    padding: "10px",
-    fontFamily: "Arial"
-  };
+
 
 class App extends React.Component {
 
@@ -22,7 +17,7 @@ class App extends React.Component {
      return (
     <div className="App">
       
-    <br></br>  <h1 mystyle={mystyle}>The Sport Thread </h1>
+    <br></br>  <h1 >The Sport Thread </h1>
       <ThreaddsContainer/>
     </div>
   );
@@ -31,4 +26,4 @@ class App extends React.Component {
 }
 
 export default connect() (App);
-// export default connect(null,{fetchThreadds}) (App);
+

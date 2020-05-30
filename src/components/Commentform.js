@@ -2,6 +2,9 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {addComment} from '../actions/addComment'
 
+
+
+//Container Component as you see its allowing for the comment form to be submitted and to actually work 
 class Commentform extends React.Component{
 
 
@@ -31,8 +34,6 @@ class Commentform extends React.Component{
     
         }
 
-        // console.log(comment)
-        // debugger
         this.props.addComment(comment)
        
         this.setState({
