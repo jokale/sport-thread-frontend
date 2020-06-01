@@ -1,9 +1,11 @@
 // Here we are creating show page for each 
 
 // functional because we arent doing anything with state 
+// import {Redirect} from 'react-router-dom'
+
+//Presentional component
 
 import React from 'react'
-// import {Redirect} from 'react-router-dom'
 import CommentsContainer from '../containers/CommentsContainer'
 
 const Threaddshow = (props) => {

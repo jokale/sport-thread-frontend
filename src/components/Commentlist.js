@@ -1,6 +1,9 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {deleteComment} from '../actions/deleteComment'
+
+//Presentional component which is focusing on the look of how created comments will look 
+
 const Commentlist = (props) => {
 
 

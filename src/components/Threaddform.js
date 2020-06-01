@@ -9,7 +9,8 @@ import Form from 'react-bootstrap/Form'
 
 
 
-
+//Container Component as you see its allowing for the thread form to be submitted and to actually work 
+//class component 
 
 class ThreaddForm extends React.Component{
 
@@ -24,14 +25,15 @@ class ThreaddForm extends React.Component{
         }
 
         handleTheChange = (event) =>{
-            // alert('Your Thread was submitted!');
             this.setState({
                [event.target.name]: event.target.value,
                redirect: true
             })
         }
-         handleTheSubmit = (event)=> {
+         handleTheSubmit = (event) => {
             event.preventDefault()
+             alert('Your Thread was submitted!');
+
             this.props.addThreadd(this.state,this.props.history)
             this.setState({
             username: '',
@@ -77,7 +79,7 @@ class ThreaddForm extends React.Component{
    
             
                 <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
-     <center><h6  >A Joanna E. Kalema Application</h6></center>
+     <center><h6>A Joanna E. Kalema Application</h6></center>
             </div> 
         )
     }
