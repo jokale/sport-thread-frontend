@@ -3,7 +3,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import Button from 'react-bootstrap/Button'
-import Clicker from '../components/Button'
+// import Clicker from '../components/Button'
 // import Threaddshow from './Threaddshow'
 
 //Presentional component which is focusing on the look of how created threads will look 
@@ -13,7 +13,7 @@ const Threaddlist = (props) => {
 
     return(
         <div> 
-            <Clicker/>
+            {/* <Clicker/> */}
             {props.threadds.map(threadd => 
             
             <div key={threadd.id}> <Button size='lg' variant="outline-dark"><Link to={`/threads/${threadd.id}`}>{threadd.thread_title}<br></br></Link></Button>

@@ -25,6 +25,11 @@ export default function threaddReducer (state = {threadds:[]}, action) {
                 })
                 return{...state, threadds:threaddsTwo}
 
+                case 'ADD_UPVOTE':
+       return {threadds: action.payload}
+       case 'ADD_DOWNVOTE':
+        return {threadds: action.payload}
+
      
 
     default:

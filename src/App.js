@@ -1,5 +1,7 @@
 import React from 'react';
-//  import logo from './logo.svg';
+  // import logo from './logo.svg';
+  // import logo from './tst-logo.png';
+
  import './App.css';
  import {connect} from 'react-redux';
 //  import {fetchThreadds} from './actions/fetchThreadds';

@@ -65,3 +65,38 @@ btn {
   background-color: #375595;
 
 }
+
+button#clickerbutton{
+
+  font-family: 'Bebas Neue', cursive;
+  border: 3px solid #375595;
+
+
+  background-color: white;
+
+
+}
+
+button#upvotebutton {
+  font-family: 'Bebas Neue', cursive;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4F628E;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #061539;
+ 
+
+}
+
+button#upvotebutton:hover {background-color: #99aedf}
+
+button#upvotebutton:active {
+  background-color: #162955;
+  box-shadow: 0 2px #061550;
+  transform: translateY(4px);
+}
