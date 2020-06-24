@@ -6,9 +6,9 @@ class VotesContainer extends React.Component {
     render(){
         return(
             <div>
-                <Upvote/>
+                <Upvote upvotes={this.props.threadd && this.props.threadd.comments}/>
                 <br></br>
-                <Downvote/>
+                <Downvote downvotes={this.props.threadd && this.props.threadd.comments}/>
 
             </div>
         )

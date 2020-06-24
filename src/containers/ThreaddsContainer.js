@@ -11,16 +11,15 @@ class ThreaddsContainer extends React.Component {
 
     componentDidMount(){
         this.props.fetchThreadds()
-        console.log("component did mount console")
+        console.log("component did mount console", this.props)
     }
 
     render(){
         console.log("render")
         return(
-
             <div>
                 <Switch>
-            <Route path='/thread/new' component={Threaddform}/>
+            <Route exact path='/thread/new' component={Threaddform}/>
             {/* <Threaddform/><br></br> */}
              <Route path='/threads/:id' render={(routerProps) => <Threaddshow {...routerProps} threadds={this.props.threadds}/>}/>
 

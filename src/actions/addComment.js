@@ -8,7 +8,7 @@ export const addComment =(comment, threaddId) => {
  //   fetch(`http://localhost:3000/threadds/${threaddId}/comments` ,{ This seems to work but ofc I do not want this for soley one thread 
 
     return(dispatch) => {
-    fetch(`http://localhost:3000/threadds/6/comments` ,{
+    fetch(`http://localhost:3000/threadds/2/comments` ,{
         headers: {
             'Content-type': 'application/json',
             'Accept': 'application/json'

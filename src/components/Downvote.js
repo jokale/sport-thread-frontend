@@ -3,10 +3,13 @@ import React from 'react';
 class Downvote  extends React.Component {
 
 
-      state = {
-        count: 0
-    }
 
+  state = {
+        count: 0
+        // this.props.threadd.comments
+    
+}
+  
 
     clickerIncrement = (event) => {
         event.preventDefault()

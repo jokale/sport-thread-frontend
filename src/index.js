@@ -43,9 +43,6 @@ ReactDOM.render(
       <Route exact path="/signup" component={Signup} />
 
 
-  
-
-
    </div> 
    
   </Router>
